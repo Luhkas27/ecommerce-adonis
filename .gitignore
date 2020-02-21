@@ -10,5 +10,4 @@ tmp
 # The development sqlite file
 database/*.sqlite
 
-.knex
-.set-value
+knex
