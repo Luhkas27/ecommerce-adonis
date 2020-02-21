@@ -12,4 +12,4 @@ tmp
 database/*.sqlite
 
 bin/migrations-folder
-bin/db.sqlite3
+bin/db.mysql
