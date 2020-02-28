@@ -22,7 +22,7 @@ class ProductSchema extends Schema {
 
     this.create('image_product', table => {
       table.increments()
-      table.integer('id').unsigned()
+      table.integer('image_id').unsigned()
       table.integer('product_id').unsigned()
       table
         .foreign('image_id')
@@ -57,6 +57,7 @@ class ProductSchema extends Schema {
   }
 
   down() {
+    this.drop('category_product')
     this.drop('image_product')
     this.drop('products')
   }
